@@ -1,0 +1,12 @@
+﻿@model EnterpriseProject.Project.MVCWebUI.Models.ProductListViewModel
+
+@{
+    ViewData["Title"] = "Layout Deneme";
+}
+
+<h1>Index</h1>
+
+@foreach (var item in Model.Products)
+{
+    <p>@item.Name</p>
+}

@@ -1,0 +1,8 @@
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\bin\Debug\netcoreapp3.0\EnterpriseProject.Core.deps.json
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\bin\Debug\netcoreapp3.0\EnterpriseProject.Core.dll
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\bin\Debug\netcoreapp3.0\EnterpriseProject.Core.pdb
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp3.0\EnterpriseProject.Core.csprojAssemblyReference.cache
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp3.0\EnterpriseProject.Core.AssemblyInfoInputs.cache
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp3.0\EnterpriseProject.Core.AssemblyInfo.cs
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp3.0\EnterpriseProject.Core.dll
+C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp3.0\EnterpriseProject.Core.pdb
