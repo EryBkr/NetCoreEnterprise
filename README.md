@@ -1,0 +1,2 @@
+# NetCoreEnterprise
+Katmanlı Mimari
