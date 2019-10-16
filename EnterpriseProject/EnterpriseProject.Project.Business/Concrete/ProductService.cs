@@ -34,6 +34,11 @@ namespace EnterpriseProject.Project.Business.Concrete
             return _productDal.Get();
         }
 
+        public List<Product> GetByCategory(int categoryId)
+        {
+           return _productDal.GetByCategory(categoryId);
+        }
+
         public List<Product> GetList(Expression<Func<Product, bool>> filter = null)
         {
             return _productDal.GetList();

@@ -6,7 +6,8 @@ using System.Text;
 
 namespace EnterpriseProject.Project.DataAccess.Abstract
 {
-   public interface IProductDal:IEntityRepository<Product>
+    public interface IProductDal : IEntityRepository<Product>
     {
+        List<Product> GetByCategory(int categoryId);
     }
 }

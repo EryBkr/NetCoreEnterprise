@@ -22,6 +22,8 @@ namespace EnterpriseProject.Project.MVCWebUI
         {
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductDal, EfProductDal>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
             services.AddMvc();
             
 
