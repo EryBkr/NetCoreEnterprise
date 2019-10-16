@@ -9,5 +9,6 @@ namespace EnterpriseProject.Project.Business.Abstract
    public interface IProductService:IGenericService<Product>
     {
         List<Product> GetByCategory(int categoryId);
+        Product GetById(int productId);
     }
 }

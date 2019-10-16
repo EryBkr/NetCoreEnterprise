@@ -7,6 +7,7 @@ using EnterpriseProject.Project.Business.Concrete;
 using EnterpriseProject.Project.DataAccess.Abstract;
 using EnterpriseProject.Project.DataAccess.Concrete.EntityFramework;
 using EnterpriseProject.Project.MVCWebUI.Middlewares;
+using EnterpriseProject.Project.MVCWebUI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -24,6 +25,9 @@ namespace EnterpriseProject.Project.MVCWebUI
             services.AddScoped<IProductDal, EfProductDal>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
+            services.AddScoped<ICartService, CartService>();
+            services.AddScoped<ICartSessionService, CartSessionService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddMvc();
             services.AddSession();
             services.AddDistributedMemoryCache();
@@ -37,10 +41,10 @@ namespace EnterpriseProject.Project.MVCWebUI
                 app.UseDeveloperExceptionPage();
                 SeedDatabase.Seed();
             }
-
+            app.UseSession();
             app.UseNodeModules(env.ContentRootPath);
             app.UseMvcWithDefaultRoute();
-            app.UseSession();
+           
         }
     }
 }

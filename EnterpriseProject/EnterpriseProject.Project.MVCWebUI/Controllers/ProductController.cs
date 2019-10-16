@@ -35,10 +35,7 @@ namespace EnterpriseProject.Project.MVCWebUI.Controllers
             return View(model);
         }
 
-        public string Session()
-        {
-            HttpContext.Session.SetString("isim","eray");
-            var isim=HttpContext.Session.GetString("isim");
-        }
+        
+
     }
 }

@@ -9,6 +9,7 @@
 @foreach (var item in Model.Products)
 {
     <p>@item.Name</p>
+    <p><a  class="btn btn-success" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.Id">Add Cart</a></p>
 }
 
 <product-list-pager current-page="Model.CurrentPage" current-category="Model.CurrentCategory" page-count="Model.PageCount" page-size="Model.PageSize"></product-list-pager>
