@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using EnterpriseProject.Project.Business.Abstract;
 using EnterpriseProject.Project.MVCWebUI.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EnterpriseProject.Project.MVCWebUI.Controllers
@@ -32,6 +33,12 @@ namespace EnterpriseProject.Project.MVCWebUI.Controllers
             };
 
             return View(model);
+        }
+
+        public string Session()
+        {
+            HttpContext.Session.SetString("isim","eray");
+            var isim=HttpContext.Session.GetString("isim");
         }
     }
 }

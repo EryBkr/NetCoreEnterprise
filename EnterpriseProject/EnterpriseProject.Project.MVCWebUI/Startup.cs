@@ -25,8 +25,8 @@ namespace EnterpriseProject.Project.MVCWebUI
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
             services.AddMvc();
-            
-
+            services.AddSession();
+            services.AddDistributedMemoryCache();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +40,7 @@ namespace EnterpriseProject.Project.MVCWebUI
 
             app.UseNodeModules(env.ContentRootPath);
             app.UseMvcWithDefaultRoute();
+            app.UseSession();
         }
     }
 }
