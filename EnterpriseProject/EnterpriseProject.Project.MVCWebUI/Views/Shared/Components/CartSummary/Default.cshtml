@@ -1,0 +1,13 @@
+﻿
+@model EnterpriseProject.Project.MVCWebUI.Models.CartSummaryViewModel
+
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+    @foreach (var item in Model.cart.CartLLines)
+    {
+        <a class="dropdown-item" href="#">@item.Product.Name  <span class="badge">@item.Quantity</span></a>
+    }
+
+    <a href="#"><span class="">@Model.cart.Total</span></a>
+    <a class="dropdown-item" asp-controller="Cart" asp-action="List">Go To Cart Details</a>
+</div>

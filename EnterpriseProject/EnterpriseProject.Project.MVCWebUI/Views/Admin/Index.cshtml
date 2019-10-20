@@ -1,0 +1,32 @@
+﻿@model EnterpriseProject.Project.MVCWebUI.Models.ProductListViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+    <h2>Product List</h2>
+    <a class="btn btn-success" asp-action="Add" asp-controller="Admin" asp-route-productId="">Ekle</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Product Name</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">In Stock</th>
+                <th></th>
+                <th></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Products)
+            {
+            <tr>
+                <th>@item.Name</th>
+                <th>@item.UnitPrice</th>
+                <th>@item.Stock</th>
+                <th><a class="btn btn-danger" asp-action="Remove" asp-controller="Admin" asp-route-productId="@item.Id">Sil</a></th>
+                <th><a class="btn btn-info" asp-action="Update" asp-controller="Admin" asp-route-productId="@item.Id">Güncelle</a></th>
+            </tr>
+            }
+        </tbody>
+    </table>

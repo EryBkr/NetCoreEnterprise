@@ -5,4 +5,3 @@ C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\
 C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp2.2\EnterpriseProject.Core.AssemblyInfo.cs
 C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp2.2\EnterpriseProject.Core.dll
 C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp2.2\EnterpriseProject.Core.pdb
-C:\Users\Blackerback\Desktop\Komple Uygulamalı Web Geliştirme Eğitimi(Engin)\Kurumsal .Net Core Mvc\EnterpriseProject\EnterpriseProject.Core\obj\Debug\netcoreapp2.2\EnterpriseProject.Core.csprojAssemblyReference.cache

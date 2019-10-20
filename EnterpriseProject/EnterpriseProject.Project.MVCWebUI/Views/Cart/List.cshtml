@@ -1,0 +1,31 @@
+﻿@model EnterpriseProject.Project.MVCWebUI.Models.CartSummaryViewModel
+    
+<h2>Your Cart</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.cart.CartLLines)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Product.UnitPrice</td>
+                    <td>@item.Product.Stock</td>
+                    <td>@item.Quantity</td>
+                    <td><a asp-action="Remove" asp-controller="Cart" asp-route-productId="@item.Product.Id">Remove</a></td>
+                    ,
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+<p>@Model.cart.Total</p>
+<p><a class="btn btn-warning" asp-action="Complete" asp-controller="Cart">Complete Shipping</a></p>

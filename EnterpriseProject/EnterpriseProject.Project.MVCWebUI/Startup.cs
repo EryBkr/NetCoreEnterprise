@@ -6,11 +6,14 @@ using EnterpriseProject.Project.Business.Abstract;
 using EnterpriseProject.Project.Business.Concrete;
 using EnterpriseProject.Project.DataAccess.Abstract;
 using EnterpriseProject.Project.DataAccess.Concrete.EntityFramework;
+using EnterpriseProject.Project.MVCWebUI.Entities;
 using EnterpriseProject.Project.MVCWebUI.Middlewares;
 using EnterpriseProject.Project.MVCWebUI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EnterpriseProject.Project.MVCWebUI
@@ -28,6 +31,8 @@ namespace EnterpriseProject.Project.MVCWebUI
             services.AddScoped<ICartService, CartService>();
             services.AddScoped<ICartSessionService, CartSessionService>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddDbContext<CustomIdentityDbContext>(options=>options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=EnterpriceCoreIdentity;integrated security=true;"));
+            services.AddIdentity<CustomIdentityUser, CustomIdentityRole>().AddEntityFrameworkStores<CustomIdentityDbContext>().AddDefaultTokenProviders();
             services.AddMvc();
             services.AddSession();
             services.AddDistributedMemoryCache();
@@ -44,6 +49,7 @@ namespace EnterpriseProject.Project.MVCWebUI
             app.UseSession();
             app.UseNodeModules(env.ContentRootPath);
             app.UseMvcWithDefaultRoute();
+            app.UseIdentity();
            
         }
     }
